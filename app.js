@@ -21,7 +21,7 @@ app.post('/', function (req, res) {
         context = signedRequest.context,
         oauthToken = signedRequest.client?.oauthToken,
         instanceUrl = signedRequest.client?.instanceUrl;
-    res.render('sf_page', { instanceUrl: instanceUrl, context: JSON.stringify(context) });
+    res.render('sf_page', { instanceUrl: instanceUrl, oauthToken: oauthToken, context: JSON.stringify(context) });
 })
 
 app.listen(process.env.PORT || 3000, function () {

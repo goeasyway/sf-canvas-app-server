@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +9,19 @@
 
 <body>
     <div>
-        <%= context %>
+        <ul>
+            <li>
+                instanceUrl= <%= instanceUrl %>
+            </li>
+            <li>
+                oauthToken= <%= oauthToken %>
+            </li>
+        </ul>
+        <textarea>
+            <%= context %>
+        </textarea>
+        
     </div>
-</body> 
+</body>
+
 </html>
