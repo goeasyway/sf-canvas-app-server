@@ -24,6 +24,6 @@ app.post('/', function (req, res) {
     res.render('sf_page', { instanceUrl: instanceUrl, context: JSON.stringify(context) });
 })
 
-app.listen(80, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("server is listening!!!");
 });
